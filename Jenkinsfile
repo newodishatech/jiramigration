@@ -11,7 +11,7 @@ pipeline{
         bat label: '', script: 'echo Parameter is: %strname%'
       }
     }
-    stage("Deploy"){
+    stage("Checking Maven"){
       steps{
         bat label: '', script: 'mvn --version'
       }
