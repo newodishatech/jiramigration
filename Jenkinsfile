@@ -11,5 +11,10 @@ pipeline{
         bat label: '', script: 'echo Parameter is: %strname%'
       }
     }
+    stage("Deploy"){
+      steps{
+        bat label: '', script: 'echo Deploy to tomcat'
+      }
+    }
   }
 }
