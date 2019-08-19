@@ -13,7 +13,7 @@ pipeline{
     }
     stage("Deploy"){
       steps{
-        bat label: '', script: 'echo Deploy to tomcat'
+        bat label: '', script: 'mvn --version'
       }
     }
   }
